@@ -2,7 +2,7 @@ plugins {
     id("java")
 }
 
-group = "ru.netilogy"
+group = "ru.netology"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -10,9 +10,9 @@ repositories {
 }
 
 dependencies {
-    testImplementation ("org.testng:testng:7.1.0")
+    testImplementation ("junit:junit:4.13")
 }
 
 tasks.test {
-    useTestNG()
+    useJUnit()
 }
